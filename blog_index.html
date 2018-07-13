@@ -32,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportContent">
               <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
                       <a class="nav-link" href="#">Contents</a>
@@ -67,7 +67,7 @@
                   </li>
                   <li class="navbar-item">
                       <a class="nav-link" href="#">
-                          <img src="./images/portrait.jpg" class="img-thumbnail rounded-circle" style="max-width:32px; max-height:32px">
+                          <img src="./img/portrait.jpg" class="img-thumbnail rounded-circle" style="max-width:32px; max-height:32px">
                           Admin
                       </a>
                   </li>
@@ -78,14 +78,14 @@
       <div class="my-5 ml-5 mr-5">
           <div class="rounded border shadow">
               <a class="">
-                  <img src="img/portrait.jpg" style="height: 5rem;">
+                  <img src="images/portrait.jpg" style="height: 5rem;">
               </a>
           </div>
       </div>
       <!-- Contents -->
       <div class="container my-5">
           <div class="rounded article-title">
-              <a class="" href="#">
+              <a class="">
                   <h3 class="ml-3 mr-3 my-1">Title - 1</h3>
                   <p class="ml-3 mr-3">Lorem sssssssssssssssssssss</p>
               </a>
@@ -114,14 +114,16 @@
       </div>
       <div class="container my-5">
           <div class="rounded article-title">
-              <a class="">
+              <a class="goto">
                   <h3 class="ml-3">Title - 5</h3>
               </a>
           </div>
       </div>
       
       <!-- Footer -->
-      
+      <div class="border">
+          <h6>微博：@Noah来举个栗子 微信公众号：邮箱：</h6>
+      </div>
       <!-- Optional JavaScript -->
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -184,6 +186,12 @@
                       $(this).css({
                           "box-shadow": total_shadow,
                       });
+                  });
+            
+                  
+                  //鼠标点击效果
+                  $(this).click(function(){
+                      location.href = "details.html?color=" + encodeURI(color);
                   });
               }); // .article-title            
               
